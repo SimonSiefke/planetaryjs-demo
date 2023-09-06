@@ -12,7 +12,7 @@ globe.loadPlugin(
     topojson: {
       file: "https://raw.githubusercontent.com/MadeByDroids/madebydroids.github.io/master/world-110m-withlakes%20(1).json",
     },
-    oceans: { fill: "#443399" },
+    oceans: { fill: "#553399" },
     land: { fill: "#663399" },
     borders: { stroke: "#553399" },
   })
