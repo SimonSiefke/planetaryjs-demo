@@ -62,6 +62,18 @@ setInterval(function () {
 }, 150);
 
 var canvas = document.getElementById("rotatingGlobe");
+const padding = 20;
+canvas.width = window.innerWidth - padding;
+canvas.height = window.innerHeight - padding;
+
+window.addEventListener(
+  "resize",
+  () => {
+    canvas.width = window.innerWidth - padding;
+    canvas.height = window.innerHeight - padding;
+  },
+  { passive: true }
+);
 // Special code to handle high-density displays (e.g. retina, some phones)
 // In the future, Planetary.js will handle this by itself (or via a plugin).
 if (window.devicePixelRatio == 2) {
