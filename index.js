@@ -12,17 +12,12 @@ globe.loadPlugin(
     topojson: {
       file: "https://raw.githubusercontent.com/MadeByDroids/madebydroids.github.io/master/world-110m-withlakes%20(1).json",
     },
-    oceans: { fill: "#663399" },
-    land: { fill: "#2063ae" },
-    borders: { stroke: "#0b4b92" },
+    oceans: { fill: "#443399" },
+    land: { fill: "#663399" },
+    borders: { stroke: "#553399" },
   })
 );
-// Load our custom `lakes` plugin to draw lakes; see below.
-globe.loadPlugin(
-  lakes({
-    fill: "#0b4b92",
-  })
-);
+
 // The `pings` plugin draws animated pings on the globe.
 globe.loadPlugin(planetaryjs.plugins.pings());
 // The `zoom` and `drag` plugins enable
