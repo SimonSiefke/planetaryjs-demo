@@ -49,7 +49,7 @@ setInterval(function () {
   var lat = Math.random() * 170 - 85;
   var lng = Math.random() * 360 - 180;
   var color = colors[Math.floor(Math.random() * colors.length)];
-  globe.plugins.pings.add(20, 47, {
+  globe.plugins.pings.add(260, 36, {
     color: color,
     ttl: 1000,
     angle: Math.random() * 3,
